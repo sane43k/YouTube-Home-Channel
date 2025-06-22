@@ -1,0 +1,129 @@
+.aside-section {
+    width: 223px;
+    background-color: var(--white);
+    padding: 30px 32px 40px;
+    position: fixed;
+    top: 84px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    @media (max-width: 960px) {
+        height: 63px;
+        width: 100%;
+        border-top: 1px solid var(--light-grey);
+        padding: 12px 24px;
+        top: auto;
+    }
+}
+
+.aside-section .navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: 960px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.aside-section .navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    @media (max-width: 960px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.aside-section .navigation a {
+    gap: 15px;
+    @media (max-width: 960px) {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.aside-section .navigation a .icon-wrapper {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 960px) {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.aside-section .navigation a img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.aside-section ul li .active {
+    color: var(--red);
+}
+
+.navigation .main-menu-list .main-menu-list__item:nth-child(4) {
+    padding-top: 32px;
+    padding-bottom: 28px;
+    @media (max-width: 960px) {
+        padding: 0;
+    }
+}
+
+.aside-section .navigation .menu-list {
+    padding-bottom: 58px;
+    @media (max-width: 960px) {
+        display: none;
+    }
+}
+
+.aside-section .navigation .h3-18pt {
+    padding-bottom: 30px;
+    @media (max-width: 960px) {
+        display: none;
+    }
+}
+
+.aside-section .navigation .sub-list {
+    padding-bottom: 104px;
+    gap: 23px;
+    @media (max-width: 960px) {
+        display: none;
+    }
+}
+
+.aside-section .navigation .sub-list a {
+    gap: 10px;
+}
+
+.aside-section .navigation .sub-list .icon-wrapper {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation .sub-list .icon-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 960px) {
+    .aside-section .navigation .link-setting {
+        display: none;
+    }
+}

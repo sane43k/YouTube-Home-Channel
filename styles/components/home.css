@@ -1,0 +1,88 @@
+.home {
+    max-width: 1730px;
+    padding: 30px 0 64px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    overflow-x: hidden;
+    @media (max-width: 960px) {
+        padding: 15px;
+        gap: 40px;
+    }
+    @media (min-width: 1920px) {
+        margin: 0 auto;
+    }
+}
+
+.home .playlist-wrapper .playlist-header .scroll-btns-wrapper {
+    margin-right: 70px;
+}
+
+.home .playlist-wrapper:nth-child(1) .h2-26pt::before {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(../../assets/icons/users/user_7.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    @media (max-width: 960px) {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.home .playlist-wrapper:nth-child(2) .cover{
+    height: 250px;
+    width: 540px;
+    @media (max-width: 960px) {
+        height: 150px;
+        width: 250px;
+    }
+    @media (max-width: 576px) {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.home .playlist-wrapper:nth-child(2) .video-card .h4-16pt {
+    max-width: 540px;
+    @media (max-width: 960px) {
+        max-width: 250px;
+    }
+    @media (max-width: 576px) {
+        max-width: 100%;
+    }
+}
+
+.home .playlist-wrapper:nth-child(3) .h2-26pt::before {
+    content: '';
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(../../assets/icons/users/user_8.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    @media (max-width: 960px) {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.home .playlist-wrapper:nth-child(3) .h2-26pt::after {
+    content: 'Recommended channel for you';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--light-grey);
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}

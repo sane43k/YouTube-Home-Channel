@@ -1,0 +1,116 @@
+.playlist-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media (max-width: 960px) {
+        gap: 20px;
+    }
+}
+
+.playlist-wrapper .playlist-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.playlist-wrapper .playlist-header .h2-26pt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    @media (max-width: 960px) {
+        gap: 15px;
+    }
+}
+
+.playlist-wrapper .playlist-header .btns-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (max-width: 960px) {
+    .playlist-wrapper .playlist-header .scroll-btns-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .playlist-wrapper .playlist-header .btn-red {
+        display: none;
+    }
+}
+
+.videos-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    @media (max-width: 960px) {
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+.videos-wrapper .video-card:last-child {
+    margin-right: 70px;
+    @media (max-width: 960px) {
+        margin-right: 0;
+    }
+}
+
+.video-card {
+    cursor: pointer;
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+}
+
+.cover {
+    height: 150px;
+    width: 250px;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    @media (max-width: 576px) {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cover .duration {
+    background: var(--transparent-black);
+    border-radius: 12px;
+    padding: 3px 9px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.video-card .h4-16pt {
+    max-width: 250px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    @media (max-width: 576px) {
+        max-width: 100%;
+    }
+}
+
+.video-card .description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

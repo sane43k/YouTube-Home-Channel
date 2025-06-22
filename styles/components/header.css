@@ -1,0 +1,121 @@
+.header-section {
+    height: 84px;
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px 70px 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 59px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    @media (max-width: 960px) {
+        height: 50px;
+        padding: 10px 16px;
+        gap: 30px;
+    }
+}
+
+.header-section .btns-search-wrapper {
+    width: 1053px;
+    display: flex;
+    align-items: center;
+    gap: 59px;
+}
+
+.header-section .btns-search-wrapper .btns-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.header-section .btns-search-wrapper .search-wrapper {
+    height: 44px;
+    width: 100%;
+    background-color: var(--search-bg);
+    border-radius: 22px;
+    padding: 13px 18px 13px 23px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @media (max-width: 960px) {
+        display: none;
+    }
+}
+
+.header-section .btns-search-wrapper .search-wrapper:focus-within {
+    caret-color: var(--black);
+    border: 1px solid var(--black);
+}
+
+.btns-search-wrapper .search-wrapper input {
+    font-family: Mulish, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    height: 100%;
+    width: 100%;
+    background-color: var(--search-bg);
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.btns-search-wrapper .search-wrapper input::placeholder {
+    color: var(--grey);
+}
+
+.header-section .icons-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media (max-width: 960px) {
+        gap: 24px;
+    }
+}
+
+.header-section .icons-wrapper a:nth-child(3) {
+    position: relative;
+}
+
+.header-section .icons-wrapper a span {
+    font-size: 12px;
+    height: 18px;
+    width: 18px;
+    color: var(--white);
+    background-color: var(--red);
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -4px;
+}
+
+.header-section .icons-wrapper a:last-child {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header-section .icons-wrapper button {
+    display: none;
+    @media (max-width: 960px) {
+        display: flex;
+    }
+}
+
+@media (max-width: 960px) {
+    .btns-search-wrapper .btns-wrapper .btn-burger {
+        display: none;
+    }
+    .header-section .icons-wrapper a:nth-child(-n+3) {
+        display: none;
+    }
+    .icons-wrapper a:nth-child(5) img {
+        height: 30px;
+        width: 30px;
+    }
+}
